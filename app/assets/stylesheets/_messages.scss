@@ -1,0 +1,31 @@
+.side-bar {
+  width: 300px;
+  float: left;
+  height: 100vh;
+  background-color: #2f3e51;
+}
+
+.side-bar__name {
+  background-color: #253141;
+  height: 100px;
+}
+
+.chat-main__content {
+  height: calc(100vh-190px);
+  background-color: #fafafa;
+}
+
+.chat-main__name {
+  background-color: #ffffff;
+  height: 100px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.chat-main__message {
+  background-color: #d2d2d2;
+  height: 90px;
+}
+
+.chat-main {
+  width: calc(100vw-300px);
+}
