@@ -15,6 +15,7 @@
   &__group {
     height: 39px;
     width: 260px;
+    text-decoration: none;
     &-name {
       color: #ffffff;
       font-size: 15px;
@@ -65,6 +66,7 @@
 }
 
 .chat-main__name {
+  box-sizing: border-box;
   height: 100px;
   padding: 0 40px;
   display: flex;
@@ -95,6 +97,7 @@
     font-size: 16px;
     margin-top: 28px;
     cursor: pointer;
+    text-decoration: none;
   }  
 }
 
@@ -120,33 +123,14 @@
         margin-left: 10px;
       }
     }
-    &__text {
-      color: #434A54;
-      font-size: 14px;
-    }
-  }
-  &-box2 {
-    height: 58px;
-    width: 100%;
-    padding-bottom: 46px;
-    &__info {
-      margin-bottom: 12px;
-      display: flex;
-      &-name {
-        color: #333333;
-        font-size: 16px;
-        font-weight: bold;
+    &__message {
+      margin-top: 10px;
+      &__text {
+        color: #434A54;
+        font-size: 14px;
+        margin-bottom: 40px;
       }
-      &-date {
-        color: #999999;
-        font-size: 12px;
-        margin-left: 10px;
-      }
-    }
-    &__text {
-      color: #434A54;
-      font-size: 14px;
-    }
+    }  
   }
 }
 
