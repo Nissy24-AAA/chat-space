@@ -1,6 +1,6 @@
 .wrapper {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .side-main {
@@ -61,6 +61,7 @@
 }
 
 .chat-main {
+  height: 100vh;
   width: calc(100vw - 300px);
   float: left;
 }
@@ -102,11 +103,12 @@
 }
 
 .chat-main__content {
-  height: 484px;
+  box-sizing: border-box;
+  height: calc(100% - 190px);
   padding: 46px 40px;
   background-color: #fafafa;
+  overflow: scroll;
   &-box {
-    height: 58px;
     width: 100%;
     padding-bottom: 46px;
     &__info {
@@ -128,14 +130,15 @@
       &__text {
         color: #434A54;
         font-size: 14px;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
       }
     }  
   }
 }
 
 .chat-main__message {
-  height: 50px;
+  box-sizing: border-box;
+  height: 90px;
   padding: 20px 40px;
   background-color: #d2d2d2dd;
   &-box {

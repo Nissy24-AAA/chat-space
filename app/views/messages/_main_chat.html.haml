@@ -4,13 +4,13 @@
       .chat-main__name__left-box__group
         = @group.name
       .chat-main__name__left-box__group-member
-        - @members.each do |member|
-          = member.name   
+        - @group.users.each do |user|
+          = user.name      
     = link_to "Edit", edit_group_path(params[:group_id]), method: :get, class: 'chat-main__name__right-box-btn'
   .chat-main__content
     = render @messages
   .chat-main__message
-    = form_for [@group, @message] do |f|
+    = form_for [@group, @message], {class: 'new_message'} do |f|
       .chat-main__message-box
         .chat-main__message-box__form
           = f.text_field :content, class: 'chat-main__message-box__form__text', placeholder: 'type a message'
